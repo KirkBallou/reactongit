@@ -71,6 +71,13 @@ const styles = theme => ({
       skills: 'Python, Node, Solidity',
       calendly: 'kirkballou',
     },
+    {
+      img: 'https://avatars2.githubusercontent.com/u/26025128?s=400&v=4',
+      title: 'Luiz Hamilton Soares',
+      author: 'fosgate29',
+      skills: 'Typescript, JavaScript, Go',
+      calendly: 'luizhamilton29',
+    },
   {
     img: 'https://avatars3.githubusercontent.com/u/1094341?s=400&v=4',
     title: 'Dmitriy Ryajov',
