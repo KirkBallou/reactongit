@@ -1,16 +1,22 @@
 {
-  "name": "website",
+  "name": "bookdev",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://kirkballou.github.io/reactongit/",
+  "homepage": "https://blocknerds.github.io/bookadev/",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "@material-ui/core": "^3.9.3",
+    "faker": "latest",
+    "gh-pages": "^2.0.1",
+    "lodash": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "2.1.8",
+    "semantic-ui-react": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
