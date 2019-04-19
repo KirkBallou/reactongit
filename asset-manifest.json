@@ -1,13 +1,13 @@
 {
-  "main.css": "/bookadev/static/css/main.8e32a071.chunk.css",
-  "main.js": "/bookadev/static/js/main.63884693.chunk.js",
-  "main.js.map": "/bookadev/static/js/main.63884693.chunk.js.map",
-  "runtime~main.js": "/bookadev/static/js/runtime~main.8d9bb741.js",
-  "runtime~main.js.map": "/bookadev/static/js/runtime~main.8d9bb741.js.map",
-  "static/js/2.320528dd.chunk.js": "/bookadev/static/js/2.320528dd.chunk.js",
-  "static/js/2.320528dd.chunk.js.map": "/bookadev/static/js/2.320528dd.chunk.js.map",
-  "index.html": "/bookadev/index.html",
-  "precache-manifest.4d38b5220e3e865799bdcef01dfa0923.js": "/bookadev/precache-manifest.4d38b5220e3e865799bdcef01dfa0923.js",
-  "service-worker.js": "/bookadev/service-worker.js",
-  "static/css/main.8e32a071.chunk.css.map": "/bookadev/static/css/main.8e32a071.chunk.css.map"
+  "main.css": "/reactongit/static/css/main.8e32a071.chunk.css",
+  "main.js": "/reactongit/static/js/main.3c3aab71.chunk.js",
+  "main.js.map": "/reactongit/static/js/main.3c3aab71.chunk.js.map",
+  "runtime~main.js": "/reactongit/static/js/runtime~main.f9415e0a.js",
+  "runtime~main.js.map": "/reactongit/static/js/runtime~main.f9415e0a.js.map",
+  "static/js/2.320528dd.chunk.js": "/reactongit/static/js/2.320528dd.chunk.js",
+  "static/js/2.320528dd.chunk.js.map": "/reactongit/static/js/2.320528dd.chunk.js.map",
+  "index.html": "/reactongit/index.html",
+  "precache-manifest.7e86b24f23a9d9ffe57409eaac889af9.js": "/reactongit/precache-manifest.7e86b24f23a9d9ffe57409eaac889af9.js",
+  "service-worker.js": "/reactongit/service-worker.js",
+  "static/css/main.8e32a071.chunk.css.map": "/reactongit/static/css/main.8e32a071.chunk.css.map"
 }
