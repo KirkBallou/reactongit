@@ -72,6 +72,13 @@ const styles = theme => ({
       calendly: 'kirkballou',
     },
     {
+      img: 'https://pbs.twimg.com/profile_images/1097572238692417537/H8F_6HR-_400x400.png',
+      title: 'Kevin Owocki',
+      author: 'owocki',
+      skills: 'Typescript, JavaScript, Go',
+      calendly: 'owocki',
+    },
+    {
       img: 'https://avatars2.githubusercontent.com/u/26025128?s=400&v=4',
       title: 'Luiz Hamilton Soares',
       author: 'fosgate29',
