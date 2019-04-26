@@ -84,35 +84,8 @@ const styles = theme => ({
       author: 'fosgate29',
       skills: 'Typescript, JavaScript, Go',
       calendly: 'luizhamilton29',
-    },
-  {
-    img: 'https://avatars3.githubusercontent.com/u/1094341?s=400&v=4',
-    title: 'Dmitriy Ryajov',
-    author: 'dryajov',
-    skills: 'Python, Node, Solidity',
-    calendly: 'kirkballou',
-  },
-  {
-    img: 'https://avatars0.githubusercontent.com/u/36509712?s=400&v=4',
-    title: 'Steven Pearce',
-    author: 'StevenJNPearce',
-    skills: 'Typescript, JavaScript, Go',
-    calendly: 'kirkballou',
-  },
-  {
-    img: 'https://avatars2.githubusercontent.com/u/4423365?s=460&v=4',
-    title: 'Dan Nolan',
-    author: 'Dan-Nolan',
-    skills: 'Python, Node, Solidity',
-    calendly: 'kirkballou',
-  },
-  {
-    img: 'https://avatars1.githubusercontent.com/u/1256464?s=460&v=4',
-    title: 'Yucong Sun',
-    author: 'thefallentree',
-    skills: 'Python, Node, Solidity',
-    calendly: 'kirkballou',
-  }
+    }
+
  ];
 
 
