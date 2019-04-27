@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import ImgGrid from "./grid";
+import fbase from 'firebase/app';
+
 class App extends Component {
   componentDidMount () {
+    console.log('do mount')
     const styleLink2 = document.createElement("link");
     styleLink2.rel = "stylesheet";
     styleLink2.href = "https://assets.calendly.com/assets/external/widget.css";

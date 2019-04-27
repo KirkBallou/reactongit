@@ -10,6 +10,8 @@ import Example from "./example";
 
 import ImgGrid from "./grid";
 
+import axios from 'axios'
+
 const App = ({ children }) => (
 
 
@@ -26,10 +28,9 @@ document.head.appendChild(styleLink);
 document.body.style = 'background: #E91E63';
 
 
-
-
+ 
 ReactDOM.render(
-  <App >
+  <App>
  <i class="fas fa-calendar-check"></i>
     <ImgGrid />
   </App>,

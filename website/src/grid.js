@@ -14,8 +14,11 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { Item } from 'semantic-ui-react'
+
+import axios from 'axios'
 //import image from 'https://s3.amazonaws.com/37assets/svn/1065-IMG_2529.jpg';
 //import tileData from './tileData';
+//https://api.github.com
 
 const styles = theme => ({
   root: {
@@ -56,13 +59,14 @@ const styles = theme => ({
  ];
  */
 
- const tileData = [
+ let tileData = [
   {
       img: 'https://avatars1.githubusercontent.com/u/2172549?s=400&v=4',
       title: 'Zach Herring',
       author: 'zherring',
       skills: 'Product and Design',
       calendly: 'zach-herring',
+      followers: 'f1',
     },
     {
       img: 'https://avatars3.githubusercontent.com/u/346184?s=460&v=4',
@@ -70,6 +74,7 @@ const styles = theme => ({
       author: 'KirkBallou',
       skills: 'Python, Node, Solidity',
       calendly: 'kirkballou',
+      followers: 'f2',
     },
     {
       img: 'https://pbs.twimg.com/profile_images/1097572238692417537/H8F_6HR-_400x400.png',
@@ -77,6 +82,7 @@ const styles = theme => ({
       author: 'owocki',
       skills: 'Typescript, JavaScript, Go',
       calendly: 'owocki',
+      followers: 'f3',
     },
     {
       img: 'https://avatars2.githubusercontent.com/u/26025128?s=400&v=4',
@@ -84,6 +90,7 @@ const styles = theme => ({
       author: 'fosgate29',
       skills: 'Typescript, JavaScript, Go',
       calendly: 'luizhamilton29',
+      followers: 'f4',
     }
 
  ];
@@ -93,11 +100,21 @@ const styles = theme => ({
 
 
 
-
-
 function TitlebarGridList(props) {
   const { classes } = props;
+  const followers = [];
 
+   for (let i = 0; i < tileData.length; i++) {
+     axios.get('https://api.github.com/users/' + tileData[i].author)
+  .then(function(response){
+    //tileData[i].followers = response.data.followers;
+    document.getElementById(tileData[i].followers).innerHTML = ""+response.data.public_repos+" Public Repos "+response.data.followers+" Followers";
+    console.log("foollow"+tileData[i].followers); // ex.: 200
+
+  });
+
+
+       }
 
   return (
     <div>
@@ -110,7 +127,7 @@ function TitlebarGridList(props) {
        </Item.Content>
      </Item>
     </Item.Group>
- <Header as='h2' color='white'>
+ <Header as='h2'>
  <Icon.Group size='large'>
  <Icon name='calendar check outline' />
   </Icon.Group>
@@ -122,21 +139,17 @@ function TitlebarGridList(props) {
 
     <Paper className={classes.root} elevation={1}>
     {tileData.map(tile => (
-    <Card onclick="">
+    <Card>
       <Image src={tile.img} height='244' width='290'/>
       <Card.Content>
         <Card.Header>{tile.title}</Card.Header>
         <Card.Meta>
           <span className='date'>{tile.author}</span>
         </Card.Meta>
-        <Card.Description>{tile.skills}</Card.Description>
+        <Card.Description><div id={tile.followers} className='date'></div></Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <a>
-          <Icon name='user' />
-          103 Followers
-        </a>
-        <Button variant="contained" href={"javascript:activateLasers('" + tile.calendly+"');"} class="ui primary right floated button">
+        <Button variant="contained" href={"javascript:activateLasers('" + tile.calendly+"');"} className="ui primary right floated button">
       Book Now
       </Button>
 
